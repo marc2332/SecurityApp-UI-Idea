@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:padding="100dp"
+        android:paddingBottom="100dp"
+        android:paddingRight="100dp"
+        app:cardBackgroundColor="#4A86E8"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/PerCard"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/background_light"
+            android:textSize="65dp"
+            tools:text="17%" />
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="365dp"
+        android:layout_height="191dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="top|center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.086">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/button1"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:cropToPadding="false"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="15dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_card" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="Clean"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView3"
+                app:layout_constraintHorizontal_bias="0.304"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:layout_constraintVertical_bias="0.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/button2"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="15dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_card" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:paddingLeft="55dp"
+                android:paddingRight="50dp"
+                android:text="Scan"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.973"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

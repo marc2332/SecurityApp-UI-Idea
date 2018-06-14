@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SecurityApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="PerCard">97%</string>
+    <string name="title_activity_clean">Clean</string>
+    <string name="title_activity_scan">Scan</string>
+</resources>
